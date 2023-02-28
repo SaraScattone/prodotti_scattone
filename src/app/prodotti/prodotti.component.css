@@ -1,0 +1,13 @@
+td {
+  padding-right: 5px;
+  border-top: solid 3px gray;
+  border-right: solid 3px gray;
+}
+th {
+  padding-right: 25px;
+  border-right: solid 3px gray;
+}
+table {
+  border: solid;
+  border-radius: 5px;
+}
