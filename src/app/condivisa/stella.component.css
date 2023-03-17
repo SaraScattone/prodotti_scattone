@@ -1,0 +1,12 @@
+@import '~font-awesome/css/font-awesome.css';
+
+.crop {
+  /*controlla cosa succede al contenuto quando il contenuto è troppo grande per l'area alla quale appartiene.
+  */
+  overflow: hidden;
+}
+
+div {
+  /*cambia la forma del puntatore del mouse.*/
+  cursor: pointer;
+}
