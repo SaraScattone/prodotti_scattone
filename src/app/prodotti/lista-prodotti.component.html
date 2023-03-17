@@ -18,7 +18,7 @@
       <img *ngIf="imm" [src]="p.imageUrl" width="200" height="150" />
     </td>
     <td>{{ p.productName }}</td>
-    <td>{{ p.productCode }}</td>
+    <td>{{ p.productCode | convertToSpace: '-' }}</td>
     <td>{{ p.releaseDate }}</td>
     <td>{{ p.price }}</td>
     <td>{{ p.starRating }}</td>
