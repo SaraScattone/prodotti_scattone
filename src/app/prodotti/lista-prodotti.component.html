@@ -2,6 +2,8 @@
   Inserisci filtro <input type="text" [(ngModel)]="listFilter" />
   <p>Filtrato per: {{ listFilter }}</p>
 </div>
+<div>Valore del rating: {{ fromStelle }}</div>
+<p></p>
 <button id="bottone" (click)="Immagine()">Mostra Immagine</button>
 <p></p>
 <table>
@@ -22,6 +24,11 @@
     <td>{{ p.releaseDate }}</td>
     <td>{{ p.price }}</td>
     <!--<td>{{ p.starRating }}</td>-->
-    <td><stella [rating]="p.starRating"></stella></td>
+    <td>
+      <stella
+        [rating]="p.starRating"
+        (dalleStelle)="onStelleClick($event)"
+      ></stella>
+    </td>
   </tr>
 </table>
